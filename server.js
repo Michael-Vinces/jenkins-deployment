@@ -23,7 +23,7 @@ const incrementVisits = () => {
 
 app.get('/', (req, res) => {
     const visits = incrementVisits();
-    res.send(`¡Hola Mundo! Esta es una aplicación lista para Jenkins.<br>Contador de visitas: ${visits}`);
+    res.send(`¡Hola Mundo! Esta es una aplicación lista para Jenkins by MIchael.<br>Contador de visitas: ${visits}`);
 });
 
 app.listen(port, () => {
