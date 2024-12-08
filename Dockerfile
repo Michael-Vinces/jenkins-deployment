@@ -4,11 +4,11 @@ FROM node:18
 # Crear el directorio de trabajo dentro del contenedor
 WORKDIR /usr/src/app
 
-# Copiar los archivos de la aplicación al contenedor
+# Copiar los archivos del proyecto al contenedor
 COPY package*.json ./
 COPY server.js ./
 
-# Instalar las dependencias
+# Instalar dependencias
 RUN npm install
 
 # Exponer el puerto 3000
